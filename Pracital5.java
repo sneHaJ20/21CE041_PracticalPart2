@@ -1,3 +1,4 @@
+//this code is prepared by 21CE041_SnehaJadeja
 import java.util.Scanner;
 public class Pracital5
 {
