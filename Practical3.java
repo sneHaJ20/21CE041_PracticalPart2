@@ -1,4 +1,4 @@
-
+//This code is written by 21CE041_SnehaJadeja.
 import java.util.Scanner;
 public class Practical3 {
     public String id;
@@ -61,7 +61,6 @@ public class Practical3 {
                     break;
                 }
                 case "B": {
-                    //Scanner sc= new Scanner(System.in);
                     int get = sc.nextInt();
                     System.out.println("Initial balance " + str[i].balance);
                     str[i].balance = str[i].balance - get;
@@ -72,7 +71,7 @@ public class Practical3 {
                 }
                 case "C":
                 {
-                    // Scanner sc= new Scanner(System.in);
+                    
                     int put = sc.nextInt();
                     System.out.println("Initial balance " + str[i].balance);
                     str[i].balance = str[i].balance + put;
@@ -83,7 +82,7 @@ public class Practical3 {
                 }
                 case "D":
                 {
-                    // Scanner sc = new Scanner(System.in);
+                    
                     System.out.println("Amount to be transfered:");
                     int mt = sc.nextInt();
                     System.out.println("Amount to be transfered into which account :");
