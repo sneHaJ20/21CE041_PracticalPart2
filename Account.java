@@ -1,8 +1,10 @@
+//This code is prepared by 21CE041_SnehaJadeja.
 import java.util.Date;
 import java.text.SimpleDateFormat;
 import java.time.LocalTime;
 import java.util.Scanner;
 public class Account {
+    
     private int id = 0;
     private double balance = 500;
     private double annualInterestRate = 0.07;
@@ -30,11 +32,10 @@ public class Account {
     }
     void  getdate()
     {
-        Date sneha= new Date();
+        Date sn= new Date();
         SimpleDateFormat form= new SimpleDateFormat("dd/MM/yyyy");
-        //LocalTime obj=LocalTime.now();
-        //System.out.println(obj);
-        System.out.println(form.format(sneha));
+
+        System.out.println(form.format(sn));
     }
     double getMonthlyInterestRate()
     {
@@ -46,7 +47,6 @@ public class Account {
     }
     void withdraw()
     {
-        //int get;
         Scanner sc= new Scanner(System.in);
         int get=sc.nextInt();
         System.out.println("Initial balance " +balance);
@@ -65,8 +65,8 @@ public class Account {
     }
     public static void main(String[] args)
     {
-        Account harshal= new Account();
-        harshal.getdate();
+        Account ha= new Account();
+        ha.getdate();
 
         Scanner sc= new Scanner(System.in);
 
@@ -74,18 +74,18 @@ public class Account {
         double b=sc.nextDouble();
         double c=sc.nextDouble();
 
-        harshal.getdata(a,b,c);
-        harshal.putdata();
+        ha.getdata(a,b,c);
+        ha.putdata();
 
         double h;
-        h=harshal.getMonthlyInterestRate();
+        h=ha.getMonthlyInterestRate();
         System.out.println(h);
 
         double s;
-        s= harshal.getannualInterestrate();
+        s= ha.getannualInterestrate();
         System.out.println(s);
 
-        harshal.withdraw();
-        harshal.deposit();
+        ha.withdraw();
+        ha.deposit();
     }
 }
